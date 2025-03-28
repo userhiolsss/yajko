@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета студента</title>
+</head>
+<body>
+    <h2>Анкета студента</h2>
+    <form action="submit.php" method="post">
+        <label for="name">Ім'я та прізвище:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="pass">Пароль:</label>
+        <input type="password" id="pass" name="pass" required><br><br>
+        
+        <label for="age">Вік:</label>
+        <input type="number" id="age" name="age" min="1" required><br><br>
+        
+        <label for="birth">Дата народження:</label>
+        <input type="date" id="birth" name="birth" required><br><br>
+        
+        <fieldset>
+            <legend>Стать:</legend>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Чоловіча</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Жіноча</label>
+        </fieldset><br>
+        
+        <fieldset>
+            <legend>Відомі мови:</legend>
+            <input type="checkbox" id="eng" name="languages" value="English">
+            <label for="eng">Англійська</label>
+            <input type="checkbox" id="ua" name="languages" value="Ukrainian">
+            <label for="ua">Українська</label>
+            <input type="checkbox" id="fr" name="languages" value="French">
+            <label for="fr">Французька</label>
+        </fieldset><br>
+        
+        <label for="country">Країна:</label>
+        <select id="country" name="country" required>
+            <option value="usa">США</option>
+            <option value="ua">Україна</option>
+            <option value="uk">Велика Британія</option>
+        </select><br><br>
+        
+        <label for="subjects">Предмети в коледжі:</label>
+        <select id="subjects" name="subjects" multiple>
+            <option value="math">Математика</option>
+            <option value="cs">Комп'ютерні науки</option>
+            <option value="physics">Фізика</option>
+            <option value="chemistry">Хімія</option>
+            <option value="english">Англійська</option>
+        </select><br><br>
+        
+        <label for="interest">Оцінка інтересу до програмування:</label>
+        <input type="range" id="interest" name="interest" min="1" max="10"><br><br>
+        
+        <label for="skills">Опишіть свої навички:</label><br>
+        <textarea id="skills" name="skills" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="resume">Завантажити резюме:</label>
+        <input type="file" id="resume" name="resume" required><br><br>
+        
+        <label for="color">Улюблений колір:</label>
+        <input type="color" id="color" name="color"><br><br>
+        
+        <label for="study-time">Зручний час для навчання:</label>
+        <input type="time" id="study-time" name="study-time"><br><br>
+        
+        <input type="submit" value="Надіслати анкету">
+    </form>
+</body>
+</html>

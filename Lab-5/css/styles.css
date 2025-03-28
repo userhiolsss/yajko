@@ -1,0 +1,112 @@
+/* Стилі для header */
+.header {
+    background-color: rgb(37, 39, 117); 
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: left;
+}
+
+.logo-img {
+    width: 100px; 
+    margin-right: 15px;
+}
+
+.university-name {
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.navbar {
+    background-color: #68686852;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(37, 39, 117);
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color: #f50057;
+}
+
+
+.hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(37, 39, 117, 0.7), rgba(0, 0, 0, 0.3));
+}
+
+.university-photo {
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+.image-gallery {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.image-gallery h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(37, 39, 117);
+}
+
+
+.image-gallery .row {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+
+.image-gallery img {
+    width: 200px; 
+    height: 150px;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); 
+}

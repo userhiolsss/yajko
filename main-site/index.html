@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Лабораторні роботи</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #c3cfe2, #f5f7fa);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: #2c3e50;
+    }
+
+    h1 {
+      font-size: 3.2em;
+      margin-bottom: 40px;
+      animation: fadeInDown 1s ease-out;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .lab-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .lab-link {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 600;
+      font-size: 1.1em;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .lab-link:hover {
+      background: #a0e7e5;
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.95em;
+      color: #666;
+      text-align: center;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Лабораторні роботи</h1>
+
+  <div class="lab-container">
+    <a class="lab-link" href="./lab-1/index.html">Лабораторна 1</a>
+    <a class="lab-link" href="./lab-2/index.html">Лабораторна 2</a>
+    <a class="lab-link" href="./lab-3/index.html">Лабораторна 3</a>
+    <a class="lab-link" href="./lab-4/index.html">Лабораторна 4</a>
+    <a class="lab-link" href="./lab-5/index.html">Лабораторна 5</a>
+    <a class="lab-link" href="./lab-6/index.html">Лабораторна 6</a>
+    <a class="lab-link" href="./lab-7/index.html">Лабораторна 7</a>
+    <a class="lab-link" href="./lab-8/index.html">Лабораторна 8</a>
+    <a class="lab-link" href="./lab-9/index.html">Лабораторна 9</a>
+    <a class="lab-link" href="./lab-10/index.html">Лабораторна 10</a>
+    <a class="lab-link" href="./lab-11/index.html">Лабораторна 11</a>
+    <a class="lab-link" href="./lab-12/index.html">Лабораторна 12</a>
+    <a class="lab-link" href="./lab-13/index.html">Лабораторна 13</a>
+    <a class="lab-link" href="./lab-14/index.html">Лабораторна 14</a>
+  </div>
+
+  <footer>© 2025 Ющак Ярема. Усі права були і не були (❁´◡`❁)</footer>
+
+</body>
+</html>
